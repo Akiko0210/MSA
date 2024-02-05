@@ -42,7 +42,7 @@ const Navbar = () => {
   ];
   const [active, setActive] = useState<number>(0);
   return (
-    <div className="flex justify-between px-12 items-center border">
+    <div className="flex justify-between px-12 items-center border-y h-[10%]">
       <Link href="/">
         <Image src="/logo.png" height={200} width={200} alt="logo" />
       </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
           }
         )}
       </div>
-      <button className="bg-blue text-white h-12 px-8 flex jusitfy-center items-center rounded-full font-medium">Contact</button>
+      <button className="button">Contact</button>
     </div>
   );
 };

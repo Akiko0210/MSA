@@ -17,9 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
+      <body
+        className={`h-auto w-screen overflow-x-hidden ${raleway.className}`}
+      >
         <Navbar />
+        {/* <div className="h-[90%]"> */}
         {children}
+        {/* </div> */}
       </body>
     </html>
   );
