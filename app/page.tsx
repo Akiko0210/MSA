@@ -18,7 +18,7 @@ export default function Home() {
       />
       <Team />
       <EventsSlider />
-      {/* <Consul /> */}
+      <Consul />
     </main>
   );
 }

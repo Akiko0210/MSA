@@ -13,9 +13,16 @@ interface CardData {
 
 const Card = ({ image, title, description, date }: CardData) => {
   return (
-    <div className="w-[30%] relative h-[600px]">
-      <div className="w-full h-full relative mb-2">
-        <Image alt="card image" src={image} fill={true} />
+    <div className="w-[30%] h-[600px]">
+      <div className="w-full mb-2">
+        {/* change this image and make it jsx item */}
+        <Image
+          alt="card image"
+          src={image}
+          // fill={true}
+          height={1000}
+          width={500}
+        />
       </div>
       <div className="text-2xl font-bold leading-10 mb-2">{title}</div>
       <div className="leading-6">{description}</div>
