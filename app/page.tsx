@@ -4,6 +4,7 @@ import Rectangle from "./components/Rectangle";
 import Team from "./components/Team";
 import EventsSlider from "./components/EventsSlider";
 import Consul from "./components/Consul";
+import LatestNews from "./components/LatestNews";
 // import
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Team />
       <EventsSlider />
       <Consul />
+      <LatestNews />
     </main>
   );
 }

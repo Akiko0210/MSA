@@ -57,7 +57,7 @@ const EventsSlider = () => {
     },
   ];
   return (
-    <div className="p-40 w-full">
+    <div className="p-40 w-full bg-neutral-100">
       <div className="font-bold text-5xl mb-8">Events</div>
       <div className="flex justify-between">
         <div className="w-[60%]">

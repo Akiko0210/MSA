@@ -15,12 +15,13 @@ const config: Config = {
       },
       colors: {
         black: "#001F3F",
-        grey: "#8D8D8D",  
-        blue: "#00A6FB"
+        grey: "#8D8D8D",
+        blue: "#00A6FB",
       },
-      // fontFamily: {
-      //   display: "Raleway",
-      // },
+      fontFamily: {
+        display: "Raleway",
+        roboto: "Roboto, sans-serif",
+      },
     },
   },
   plugins: [],
