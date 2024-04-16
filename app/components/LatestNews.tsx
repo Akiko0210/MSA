@@ -2,9 +2,9 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-const Corner = ({ right, top }: { right: number; top: number }) => {
+const Corner = () => {
   return (
-    <div className={`absolute right-${right} top-${top}`}>
+    <div className={``}>
       <svg
         width="32"
         height="32"
@@ -36,13 +36,18 @@ const Card = ({ data }: { data: Image }) => {
         <div className="relative h-[300px] rounded-3xl overflow-hidden">
           <Image fill src={data.image} alt="img" />
         </div>
-        <div className="absolute right-0 top-0 h-16 w-16 rounded-bl-3xl bg-white flex justify-center items-center">
-          <div className="h-12 w-12 rounded-full bg-blue flex justify-center items-center">
-            <Image src={"/Arrow 1.svg"} alt="img" height={15} width={15} />
+        <div className="absolute right-0 top-0 flex flex-col items-end">
+          <div className="flex">
+            <Corner />
+            <div className="h-16 w-16 flex rounded-bl-3xl justify-center items-center bg-white">
+              <div className="h-12 w-12 rounded-full bg-blue flex justify-center items-center">
+                <Image src={"/Arrow 1.svg"} alt="img" height={15} width={15} />
+              </div>
+            </div>
           </div>
+          <Corner />
         </div>
-        <Corner top={0} right={16} />
-        <Corner top={16} right={0} />
+        {/* <Corner top={16} right={0} /> */}
       </div>
       <div className="font-roboto text-md font-bold my-2">{data.title}</div>
       <div className="font-roboto font-medium text-[#41495D] text-sm ">
